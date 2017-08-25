@@ -1,19 +1,17 @@
-# react-native-randombytes
+# react-native-secure-randombytes
 
 ## Usage
 
 ```js
-var randomBytes = require('react-native-randombytes')
-
-// synchronous API
-// uses SJCL
-var rand = randomBytes(4)
+var randomBytes = require('react-native-secure-randombytes')
 
 // asynchronous API
 // uses iOS-side SecRandomCopyBytes
 randomBytes(4, (err, bytes) => {
   console.log(bytes.toString('hex'))
 })
+
+asyncRandomBytes.then((bytes) => {},(err) => {})
 ```
 
 ## Installation
@@ -44,7 +42,7 @@ Confused? See an example with screenshots [here](http://facebook.github.io/react
 ...
 
 include ':randombytes', ':app'
-project(':randombytes').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-randombytes/android')
+project(':randombytes').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-secure-randombytes/android')
 ```
 
 * Update Gradle Build
