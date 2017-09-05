@@ -26,7 +26,7 @@ rnpm link
 
 #### `iOS`
 
-* Drag RNRandomBytes.xcodeproj from node_modules/react-native-randombytes into your XCode project.
+* Drag RNRandomBytes.xcodeproj from node_modules/react-native-secure-randombytes into your XCode project.
 
 * Click on the project in XCode, go to Build Phases, then Link Binary With Libraries and add `libRNRandomBytes.a`
 
