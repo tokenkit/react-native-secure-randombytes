@@ -1,6 +1,6 @@
 {
   "name": "react-native-secure-randombytes",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "description": "randomBytes for react-native",
   "main": "index.js",
   "scripts": {
