@@ -7,8 +7,12 @@
 //
 
 #import "RNRandomBytes.h"
-#import "RCTBridgeModule.h"
-#import "RCTBridge.h"
+#if __has_include(<React/RCTBridgeModule.h>)
+  #import <React/RCTBridgeModule.h>
+#else
+  #import "RCTBridgeModule.h"
+#endif
+#import <React/RCTBridge.h>
 
 @implementation RNRandomBytes
 
